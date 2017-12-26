@@ -16,6 +16,8 @@ ul, li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
+	flex-wrap: wrap;
+	flex: 1;
 }
 a {
 	color: orange;
@@ -142,6 +144,7 @@ select:hover {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+	display: flex;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -300,6 +303,12 @@ select:hover {
 		padding: 0;
 		border-top-left-radius: 10px;
 	}
+	#restaurants-list {
+		display: inline-block;
+	}
+	#restaurants-list li {
+		width: auto;
+	}
 	.name, .date {
 		font-size: 6pt;
 		color: white;
@@ -319,5 +328,8 @@ select:hover {
 	.ratingNumber {
 		color: white;
 		font-weight: 300;
+	}
+	#restaurant-container, #reviews-container {
+		width: auto;
 	}
 }
