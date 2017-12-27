@@ -16,8 +16,6 @@ ul, li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
 	color: #333;
-	flex-wrap: wrap;
-	flex: 1;
 }
 a {
 	color: orange;
@@ -145,16 +143,17 @@ select:hover {
   padding: 30px 15px 60px;
   text-align: center;
 	display: flex;
+	flex-wrap: wrap;
 }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
+  margin: 1% 20% 0 20%;
   min-height: 300px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 50%;
+  width: auto;
 }
 .col-12 {
 	display: inline-block;
@@ -292,9 +291,6 @@ select:hover {
 
 @media only screen and (max-width:600px) {
 	/* For mobile phones*/
-	#restaurants-list {
-		padding-top: 15%;
-	}
 	.filter-options select {
 		width: 40%;
 	}
@@ -308,6 +304,7 @@ select:hover {
 	}
 	#restaurants-list li {
 		width: auto;
+		margin: 1%;
 	}
 	.name, .date {
 		font-size: 6pt;
