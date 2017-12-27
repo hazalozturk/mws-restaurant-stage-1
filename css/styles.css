@@ -142,18 +142,18 @@ select:hover {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
+	columns: 2;
 }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 1% 20% 0 20%;
+  margin: 1% 10% 0 10%;
   min-height: 300px;
   padding: 0 30px 25px;
   text-align: left;
-  width: auto;
+  width: 60%;
 }
 .col-12 {
 	display: inline-block;
@@ -301,6 +301,7 @@ select:hover {
 	}
 	#restaurants-list {
 		display: inline-block;
+		columns: 1;
 	}
 	#restaurants-list li {
 		width: auto;
