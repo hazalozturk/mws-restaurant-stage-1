@@ -205,11 +205,11 @@ select:hover {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 400px;
-  position: relative;
+  height: 87%;
+  position: fixed;
   right: 0;
   top: 80px;
-  width: 100%;
+  width: 50%;
 }
 .inside #map {
   background-color: #ccc;
@@ -231,7 +231,7 @@ select:hover {
   line-height: 1.1;
 }
 #restaurant-img {
-	width: 90%;
+	width: 100%;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -247,15 +247,13 @@ select:hover {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+	width: 100%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
-	display: block;
-	margin: auto;
+  padding: 14% 2% 0 2%;
+  width: 45%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
@@ -288,7 +286,22 @@ select:hover {
 #restaurant-hours td {
   color: #666;
 }
-
+@media only screen and (max-width:900px) {
+	.inside #map-container {
+	  height: 400px;
+	  position: relative;
+	  width: 100%;
+	}
+	#restaurant-container, #reviews-container {
+	  padding: 14px 40px 30px;
+	  width: 50%;
+		display: block;
+		margin: auto;
+	}
+	#restaurant-container, #reviews-container {
+		width: auto;
+	}
+}
 @media only screen and (max-width:600px) {
 	/* For mobile phones*/
 	.filter-options select {
@@ -326,8 +339,5 @@ select:hover {
 	.ratingNumber {
 		color: white;
 		font-weight: 300;
-	}
-	#restaurant-container, #reviews-container {
-		width: auto;
 	}
 }
